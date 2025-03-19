@@ -94,8 +94,8 @@ only-include = [
 [tool.hatch.build.targets.wheel]
 packages = ["src/snakemake"]
 
-[tool.hatch.build.hooks.custom]
-[tool.hatch.build.targets.BuildFrontend.hooks.custom]
+# Custom logic only needed for sdist
+[tool.hatch.build.targets.sdist.hooks.custom]
 
 [tool.codespell]
 # Ref: https://github.com/codespell-project/codespell#using-a-config-file
