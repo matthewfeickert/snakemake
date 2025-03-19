@@ -532,7 +532,7 @@ class Assets:
 
     @classmethod
     def deploy(cls) -> None:
-        # this has to work from setup.py without being able to load the snakemake
+        # this has to work from hatch_build.py without being able to load the snakemake
         # modules.
         base_path = Path(__file__).parent / "data"
         for asset_path, asset in cls.spec.items():
