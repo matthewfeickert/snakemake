@@ -14,7 +14,6 @@ def get_packages():
         )
 
     # packages declared here must be downloaded to the prefix share/snakemake/assets
-    # via setuptools_download in setup.cfg
     return Packages(
         {
             "snakemake": Package(
